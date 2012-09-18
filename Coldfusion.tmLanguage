@@ -1177,18 +1177,53 @@
 					<key>name</key>
 					<string>string.escaped.hash.cfml</string>
 				</dict>
-<!-- Documentation for hash regexes is available at https://gist.github.com/a5e891b504683ccdf3bc -->
 				<!-- Match single illegal unescaped hash -->
 				<dict>
 					<key>match</key>
-					<string>#(?!(([a-zA-Z_$][\w$]*(((\[.*\])|(\(.*\)))|(\.[\w$]+)*)*)|(\(.*\)))#)</string>
+					<string>(?x)
+							(\#)
+							(?!		# zero width negative lookahead assertion
+								(
+									([a-zA-Z_$][\w$]*	# assertion for plain variables or function names including currency symbol "$"
+										(
+											(\[.*\])				# asserts a match for anything in square brackets
+											|
+											(\(.*\))				# or anything in parens
+											|
+											(\.[\w$]+)*				# or zero or more "dot" notated variables
+											|
+											(\s*[\+\-\*\/]\s*\d*)	# asserts simple arithmentic operators + digits
+										)*		# asserts preceeding square brackets, parens, dot notated vars or arithmetic zero or more times
+									)
+									|
+									(\(.*\))	 # asserts a match for anything in parens
+								)\#		# asserts closing hash
+							)</string>
 					<key>name</key>
 					<string>string.unescaped.hash.cfml</string>
 				</dict>
 				<!-- Match the start of interpolated hashes but ignore single hashes that are unmatched -->
 				<dict>
 					<key>begin</key>
-					<string>(#)(?=(([a-zA-Z_$][\w$]*(((\[.*\])|(\(.*\)))|(\.[\w$]+)*)*)|(\(.*\)))#)</string>
+					<string>(?x)
+							(\#)
+							(?=		# zero width negative lookahead assertion
+								(
+									([a-zA-Z_$][\w$]*	# assertion for plain variables or function names including currency symbol "$"
+										(
+											(\[.*\])				# asserts a match for anything in square brackets
+											|
+											(\(.*\))				# or anything in parens
+											|
+											(\.[\w$]+)*				# or zero or more "dot" notated variables
+											|
+											(\s*[\+\-\*\/]\s*\d*)	# asserts simple arithmentic operators + digits
+										)*		# asserts preceeding square brackets, parens, dot notated vars or arithmetic zero or more times
+									)
+									|
+									(\(.*\))	 # asserts a match for anything in parens
+								)\#		# asserts closing hash
+							)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
