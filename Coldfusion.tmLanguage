@@ -1184,7 +1184,7 @@
 							(\#)
 							(?!		# zero width negative lookahead assertion
 								(
-									([a-zA-Z_$][\w$]*	# assertion for plain variables or function names including currency symbol "$"
+									([\w$]+	# assertion for plain variables or function names including currency symbol "$"
 										(
 											(\[.*\])				# asserts a match for anything in square brackets
 											|
@@ -1192,7 +1192,9 @@
 											|
 											(\.[\w$]+)*				# or zero or more "dot" notated variables
 											|
-											(\s*[\+\-\*\/]\s*[\w$]*)	# asserts simple arithmentic operators + digits
+											(\s*[\+\-\*\/&amp;]\s*[\w$]+)	# or simple arithmentic operators + concatenation
+											|
+											(\s*&amp;\s*["|'].+["|']) 	# or concatenation with a quoted string
 										)*		# asserts preceeding square brackets, parens, dot notated vars or arithmetic zero or more times
 									)
 									|
@@ -1209,7 +1211,7 @@
 							(\#)
 							(?=		# zero width negative lookahead assertion
 								(
-									([a-zA-Z_$][\w$]*	# assertion for plain variables or function names including currency symbol "$"
+									([\w$]+	# assertion for plain variables or function names including currency symbol "$"
 										(
 											(\[.*\])				# asserts a match for anything in square brackets
 											|
@@ -1217,7 +1219,9 @@
 											|
 											(\.[\w$]+)*				# or zero or more "dot" notated variables
 											|
-											(\s*[\+\-\*\/]\s*[\w$]*)	# asserts simple arithmentic operators + digits
+											(\s*[\+\-\*\/&amp;]\s*[\w$]+)	# or simple arithmentic operators + concatenation
+											|
+											(\s*&amp;\s*["|'].+["|']) 	# or concatenation with a quoted string
 										)*		# asserts preceeding square brackets, parens, dot notated vars or arithmetic zero or more times
 									)
 									|
