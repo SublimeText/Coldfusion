@@ -1276,49 +1276,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?x)
-							(\#)
-							(?!		# zero width negative lookahead assertion
-								(
-									([a-zA-Z_$][\w$]*	# assertion for plain variables or function names including currency symbol "$"
-										(
-											(\[.*\])				# asserts a match for anything in square brackets
-											|
-											(\(.*\))				# or anything in parens
-											|
-											(\.[\w$]+)*				# or zero or more "dot" notated variables
-											|
-											(\s*[\+\-\*\/]\s*\d*)	# asserts simple arithmentic operators + digits
-										)*		# asserts preceeding square brackets, parens, dot notated vars or arithmetic zero or more times
-									)
-									|
-									(\(.*\))	 # asserts a match for anything in parens
-								)\#		# asserts closing hash
-							)</string>
+					<string>#(?!(([a-zA-Z_$]+(\.?[\w$]+)*((\[.*\])|(\(.*\)))?)|(\(.*\)))#)</string>
 					<key>name</key>
 					<string>string.unescaped.hash.html</string>
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(?x)
-							(\#)
-							(?=		# zero width negative lookahead assertion
-								(
-									([a-zA-Z_$][\w$]*	# assertion for plain variables or function names including currency symbol "$"
-										(
-											(\[.*\])				# asserts a match for anything in square brackets
-											|
-											(\(.*\))				# or anything in parens
-											|
-											(\.[\w$]+)*				# or zero or more "dot" notated variables
-											|
-											(\s*[\+\-\*\/]\s*\d*)	# asserts simple arithmentic operators + digits
-										)*		# asserts preceeding square brackets, parens, dot notated vars or arithmetic zero or more times
-									)
-									|
-									(\(.*\))	 # asserts a match for anything in parens
-								)\#		# asserts closing hash
-							)</string>
+					<string>(#)(?=(([a-zA-Z_$]+(\.?[\w$]+)*((\[.*\])|(\(.*\)))?)|(\(.*\)))#)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
