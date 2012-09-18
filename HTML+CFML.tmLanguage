@@ -1288,7 +1288,7 @@
 											|
 											(\.[\w$]+)*				# or zero or more "dot" notated variables
 											|
-											(\s*[\+\-\*\/]\s*\d*)	# asserts simple arithmentic operators + digits
+											(\s*[\+\-\*\/]\s*[\w$]*)	# asserts simple arithmentic operators + digits
 										)*		# asserts preceeding square brackets, parens, dot notated vars or arithmetic zero or more times
 									)
 									|
@@ -1312,7 +1312,7 @@
 											|
 											(\.[\w$]+)*				# or zero or more "dot" notated variables
 											|
-											(\s*[\+\-\*\/]\s*\d*)	# asserts simple arithmentic operators + digits
+											(\s*[\+\-\*\/]\s*[\w$]*)	# asserts simple arithmentic operators + digits
 										)*		# asserts preceeding square brackets, parens, dot notated vars or arithmetic zero or more times
 									)
 									|
