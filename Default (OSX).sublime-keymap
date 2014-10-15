@@ -128,18 +128,18 @@
         {"key": "selector", "operator": "not_equal", "operand": "source.cfscript.embedded.cfml"}
     ]
     },
-    // super+alt+d writeDump();
+    // ctrl+shift+d writeDump();
     {
-    "keys": ["super+alt+d"], "command": "insert_snippet",
+    "keys": ["ctrl+shift+d"], "command": "insert_snippet",
     "args": { "contents": "writeDump(${0:$SELECTION});" },
     "context":
     [
         {"key": "selector", "operator": "equal", "operand": "source.cfscript"}
     ]
     },
-    // super+alt+d  <cfdump var="##">
+    // ctrl+shift+d  <cfdump var="##">
     {
-    "keys": ["super+alt+d"], "command": "insert_snippet",
+    "keys": ["ctrl+shift+d"], "command": "insert_snippet",
     "args": { "contents": "<cfdump var=\"#${1:$SELECTION}#\" />" },
     "context":
     [
