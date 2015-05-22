@@ -9,6 +9,10 @@ git clone https://github.com/SublimeText/ColdFusion.git
 cd ColdFusion
 git checkout development
 ```
+NOTE: For OSX:
+```
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+```
 * CFLIB Command is not currently working.
 * Tag Operator Completions is not yet implemented
 * CFScript component method completions is not yet implemented
