@@ -7631,13 +7631,5 @@ FUNCTIONS = {
 'trueFalseFormat(${1:value})':
 [
 
-],
-'private void function ${1:value}($0) {\n}':
-[
-
-],
-'private string function ${1:value}($0) {\n}':
-[
-
 ]
 }
