@@ -118,7 +118,7 @@
         { "trigger": "dateAdd\tfn. (cfscript)", "contents": "dateAdd(${1:\"${2:datepart}\", ${3:number}, ${4:date}})"},
         { "trigger": "dateCompare\tfn. (cfscript)", "contents": "dateCompare(${1:${2:date1}, ${3:date2}${4:, [datePart]}})"},
         { "trigger": "dateConvert\tfn. (cfscript)", "contents": "dateConvert(${1:\"${2:type}\", ${3:date}})"},
-        { "trigger": "dateDiff\tfn. (cfscript)", "contents": "dateDiff(${1:\"${2:datepart}\", ${3:date1}, ${4:date2}})"},
+        { "trigger": "dateDiff\tfn. (cfscript)", "contents": "dateDiff(${1:\"${2:date1}\", ${3:date2}, ${4:datepart}})"},
         { "trigger": "dateFormat\tfn. (cfscript)", "contents": "dateFormat(${1:${2:date}${3:, [mask]}})"},
         { "trigger": "datePart\tfn. (cfscript)", "contents": "datePart(${1:\"${2:datepart}\", ${3:date}})"},
         { "trigger": "day\tfn. (cfscript)", "contents": "day(${1:${2:date}})"},
