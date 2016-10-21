@@ -173,7 +173,7 @@ git checkout development
 
 
 ##Additional Packages
-Some additional packages you might want to check out  - they are all available through Package Control http://wbond.net/sublime_packages/community
+Some additional packages you might want to check out  - they are all available through Package Control https://packagecontrol.io/
 
 * http://net.tutsplus.com/articles/news/introducing-nettuts-fetch/ (highly recommended)
 * https://github.com/BoundInCode/AutoFileName (provides file auto-complete)
