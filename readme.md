@@ -178,7 +178,6 @@ Some additional packages you might want to check out  - they are all available t
 * http://net.tutsplus.com/articles/news/introducing-nettuts-fetch/ (highly recommended)
 * https://github.com/BoundInCode/AutoFileName (provides file auto-complete)
 * https://github.com/weslly/ColorPicker (choose a color and get the hex code)
-* https://github.com/xobb1t/Sublime-AdvancedNewFile (create new files faster)
 * https://github.com/kemayo/sublime-text-2-git (git commands)
 * https://github.com/facelessuser/ExportHtml (provides printing)
 * https://github.com/dz0ny/LiveReload-sublimetext2 (live reload browser)
