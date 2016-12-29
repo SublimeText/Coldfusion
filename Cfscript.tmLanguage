@@ -1025,10 +1025,10 @@
                     |cacheput|cacheremove|cachesetproperties|ceiling|charsetdecode|charsetencode|chr
                     |cjustify|compare|comparenocase|cos|createdate|createdatetime|createobject|createodbcdate
                     |createodbcdatetime|createodbctime|createtime|createtimespan|createuuid|dateadd|datecompare
-                    |dateconvert|datediff|dateformat|datepart|day|dayofweek|dayofweekasstring|dayofyear
+                    |dateconvert|datediff|dateformat|datepart|datetimeformat|day|dayofweek|dayofweekasstring|dayofyear
                     |daysinmonth|daysinyear|decimalformat|decrementvalue|decrypt|decryptbinary
                     |deleteclientvariable|deserializejson|de|directorycreate|directorydelete|directoryexists
-                    |directorylist|directoryrename|dollarformat|dotnettocftype|duplicate|encrypt|encryptbinary
+                    |directorylist|directoryrename|dollarformat|dotnettocftype|duplicate|encodeforhtml|encrypt|encryptbinary
                     |entitydelete|entityload|entityloadbyexample|entityloadbypk|entitymerge|entitynew
                     |entityreload|entitysave|entitytoquery|evaluate|exp|expandpath|fileclose|filecopy
                     |filedelete|fileexists|fileiseof|filemove|fileopen|fileread|filereadbinary|filereadline
