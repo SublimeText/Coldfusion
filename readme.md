@@ -11,6 +11,7 @@ The only installation method is via Git.
 cd Packages/
 git clone https://github.com/SublimeText/ColdFusion.git
 cd ColdFusion
+git fetch
 git checkout development
 ```
 * CFLIB Command is not currently working.
