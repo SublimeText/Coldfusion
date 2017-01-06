@@ -123,7 +123,6 @@ Completions in order of priority are:
 The following list contains snippets repositories made available by ColdFusion community members:
 
 * https://github.com/indynagpal/sublime-stuff
-* https://github.com/bittersweetryan/ColdFusion-Script-Sublime-Snippets
 
 To install snippets just put the ```.sublime-snippet``` files in your Packages/User folder or sub-folder (to get to your Packages/User folder select ```Preferences > Browse Packages...``` from the Sublime Text 2 menu).
 
@@ -178,17 +177,14 @@ git checkout development
 
 
 ##Additional Packages
-Some additional packages you might want to check out  - they are all available through Package Control http://wbond.net/sublime_packages/community
+Some additional packages you might want to check out  - they are all available through Package Control https://packagecontrol.io/
 
 * http://net.tutsplus.com/articles/news/introducing-nettuts-fetch/ (highly recommended)
 * https://github.com/BoundInCode/AutoFileName (provides file auto-complete)
 * https://github.com/weslly/ColorPicker (choose a color and get the hex code)
-* https://github.com/xobb1t/Sublime-AdvancedNewFile (create new files faster)
 * https://github.com/kemayo/sublime-text-2-git (git commands)
 * https://github.com/facelessuser/ExportHtml (provides printing)
-* https://github.com/dz0ny/LiveReload-sublimetext2 (live reload browser)
 * https://github.com/bgreenlee/sublime-github (github gists and more)
-* https://github.com/virtix/sublime-text-2-mxunit (mxunit testing)
 * https://github.com/seancoyne/farcry-sublimetext (farcry snippets)
 
 These packages require manual installation
